@@ -1,0 +1,60 @@
+#!/bin/bash
+set -e
+
+APP_NAME=$1
+
+DIR_MAIN=$PWD
+
+DIR_APP=$DIR_MAIN/$APP_NAME
+
+echo '-------'
+echo 'node -v'
+node -v
+
+echo '-------------'
+echo 'npm --version'
+npm --version
+
+echo '-------------------'
+echo 'cat /etc/os-release'
+cat /etc/os-release
+
+# Provide Git credentials
+git config --global user.email 'rubyist@jasonhsu.com'
+git config --global user.name 'Jason Hsu'
+
+DATE_START=$(date +%s)
+
+# Removing the old Rails app (if necessary)
+if [ -d "$DIR_APP" ]; then
+  rm -rf $DIR_APP
+fi
+
+echo '--------------'
+echo "mkdir $DIR_APP"
+mkdir $DIR_APP
+
+# Creating the new Docusaurus app
+echo '----------------------------------'
+echo "cd $DIR_APP && npx docusaurus-init"
+cd $DIR_APP && npx docusaurus-init
+wait
+
+# Adding config/docusaurus_neutrino_timestamp.txt
+# echo $DIR_APP
+# ls -l $DIR_APP
+# touch $DIR_APP/config/docusaurus_neutrino_timestamp.txt
+# echo $APP_NAME > $DIR_APP/config/docusaurus_neutrino_timestamp.txt
+
+DATE_END=$(date +%s)
+
+T_SEC=$((DATE_END-DATE_START))
+
+echo '##########################################'
+echo 'The new app has been created from scratch!'
+echo 'It is in'
+echo "$DIR_APP"
+echo ''
+echo "Time used:"
+echo "$((T_SEC/60)) minutes and $((T_SEC%60)) seconds"
+echo ''
