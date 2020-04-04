@@ -25,7 +25,7 @@ git config --global user.name 'Jason Hsu'
 
 DATE_START=$(date +%s)
 
-# Removing the old Rails app (if necessary)
+# Removing the old app (if necessary)
 if [ -d "$DIR_APP" ]; then
   rm -rf $DIR_APP
 fi
@@ -38,13 +38,29 @@ mkdir $DIR_APP
 echo '----------------------------------'
 echo "cd $DIR_APP && npx docusaurus-init"
 cd $DIR_APP && npx docusaurus-init
+cd $DIR_MAIN
 wait
 
-# Adding config/docusaurus_neutrino_timestamp.txt
-# echo $DIR_APP
-# ls -l $DIR_APP
-# touch $DIR_APP/config/docusaurus_neutrino_timestamp.txt
-# echo $APP_NAME > $DIR_APP/config/docusaurus_neutrino_timestamp.txt
+# Add the mod directory and mod scripts to .gitignore
+echo '' >> $DIR_APP/.gitignore
+echo '# Files and directories from Docusaurus Neutrino' >> $DIR_APP/.gitignore
+echo 'mod/*' >> $DIR_APP/.gitignore
+echo 'mod-*' >> $DIR_APP/.gitignore
+echo 'mod_app.sh' >> $DIR_APP/.gitignore
+
+pwd
+ls -l
+
+# Copy mod_app.sh to the new app's root directory
+echo "cp $DIR_MAIN/mod_app.sh $DIR_APP"
+cp $DIR_MAIN/mod_app.sh $DIR_APP
+
+# Copy the mod directory to the new app's root directory
+echo "cp -R $DIR_MAIN/mod $DIR_APP"
+cp -R $DIR_MAIN/mod $DIR_APP
+
+# Modify the new app
+cd $DIR_APP && bash mod_app.sh '01'
 
 DATE_END=$(date +%s)
 
