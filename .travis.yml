@@ -2,5 +2,5 @@ before_script:
   - sudo apt-get install -y bash
 
 script:
-  - $PWD/build-rails 'tmp1'
+  - $PWD/build-docu 'tmp1'
   - bash travis-after.sh
