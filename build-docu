@@ -48,9 +48,6 @@ echo 'mod/*' >> $DIR_APP/.gitignore
 echo 'mod-*' >> $DIR_APP/.gitignore
 echo 'mod_app.sh' >> $DIR_APP/.gitignore
 
-pwd
-ls -l
-
 # Copy mod_app.sh to the new app's root directory
 echo "cp $DIR_MAIN/mod_app.sh $DIR_APP"
 cp $DIR_MAIN/mod_app.sh $DIR_APP
