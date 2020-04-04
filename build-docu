@@ -11,9 +11,9 @@ echo '-------'
 echo 'node -v'
 node -v
 
-echo '-------------'
-echo 'npm --version'
-npm --version
+echo '--------------'
+echo 'yarn --version'
+yarn --version
 
 echo '-------------------'
 echo 'cat /etc/os-release'

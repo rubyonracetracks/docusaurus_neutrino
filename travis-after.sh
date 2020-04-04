@@ -8,10 +8,10 @@ pwd
 ls -l
 cd tmp1/website
 
-echo '-----------'
-echo 'npm install'
-npm install
+echo '------------'
+echo 'yarn install'
+yarn install
 
-echo '--------------------'
-echo 'npm run-script build'
-npm run-script build
+echo '--------------'
+echo 'yarn run build'
+yarn run build
