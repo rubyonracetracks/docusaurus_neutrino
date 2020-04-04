@@ -12,6 +12,6 @@ echo '-----------'
 echo 'npm install'
 npm install
 
-echo '--------'
-echo 'npm test'
-npm test
+echo '--------------------'
+echo 'npm run-script build'
+npm run-script build
