@@ -13,3 +13,11 @@ yarn install
 echo '--------------'
 echo 'yarn run build'
 yarn run build
+
+echo '----------'
+echo 'yarn audit'
+yarn audit
+
+echo '-------------'
+echo 'yarn outdated'
+yarn outdated
