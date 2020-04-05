@@ -10,3 +10,4 @@ echo '******************************'
 
 bash test_app.sh
 bash test_code.sh
+bash info.sh
