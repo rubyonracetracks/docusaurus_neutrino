@@ -58,6 +58,11 @@ cp -R $DIR_MAIN/mod $DIR_APP
 
 # Modify the new app
 cd $DIR_APP && bash mod_app.sh '01'
+cd $DIR_APP && bash mod_app.sh '02'
+
+# Remove the mod* files from the new app
+rm -rf $DIR_APP/mod
+rm $DIR_APP/mod*
 
 DATE_END=$(date +%s)
 
