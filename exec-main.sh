@@ -2,7 +2,6 @@
 set -e
 
 APP_NAME=$1
-DIR_APP=$PWD/$APP_NAME
 
 docker run -i -t --rm -v ${PWD}:/home/node/neutrino rubyonracetracks/node_user /home/node/neutrino/build-docu $APP_NAME
 

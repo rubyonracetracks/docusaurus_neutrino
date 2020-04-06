@@ -5,7 +5,7 @@ APP_NAME=$1
 
 DIR_MAIN=$PWD
 
-DIR_APP=$DIR_MAIN/$APP_NAME
+DIR_APP=$DIR_MAIN/new_apps/$APP_NAME
 
 echo '-------'
 echo 'node -v'
@@ -30,9 +30,9 @@ if [ -d "$DIR_APP" ]; then
   rm -rf $DIR_APP
 fi
 
-echo '--------------'
-echo "mkdir $DIR_APP"
-mkdir $DIR_APP
+echo '-----------------'
+echo "mkdir -p $DIR_APP"
+mkdir -p $DIR_APP
 
 # Creating the new Docusaurus app
 echo '----------------------------------'

@@ -13,6 +13,7 @@ if [ -z "$DIR_NAME" ]; then
   DIR_NAME="docu-$DATE"
 fi
 
+DIR_APP=$PWD/new_apps/$DIR_NAME
 echo '-------------------'
 echo 'App directory name:'
 echo "$DIR_NAME"
@@ -21,4 +22,5 @@ echo 'Press Enter to continue.'
 read CONT
 
 mkdir -p log
-sh exec-main.sh $DIR_NAME | tee log/main-$DATE.txt
+bash exec-main.sh $DIR_NAME | tee log/main-$DATE.txt
+cd $DIR_APP && bash build.sh
