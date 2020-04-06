@@ -17,6 +17,7 @@ mv mod-02-bin_ybuild bin/ybuild
 mv mod-02-bin_yexec bin/yexec
 mv mod-02-bin_yinfo bin/yinfo
 mv mod-02-bin_yinstall bin/yinstall
+mv mod-02-bin_yroot bin/yroot
 mv mod-02-bin_yserver bin/yserver
 mv mod-02-bin_youtdated bin/youtdated
 mv mod-02-bin_ytest bin/ytest
@@ -25,6 +26,7 @@ chmod +x bin/*
 mv mod-02-build.sh build.sh
 mv mod-02-clean.sh clean.sh
 mv mod-02-exec.sh exec.sh
+mv mod-02-exec-root.sh exec-root.sh
 mv mod-02-git_check.sh git_check.sh
 mv mod-02-info.sh info.sh
 mv mod-02-nuke.sh nuke.sh
