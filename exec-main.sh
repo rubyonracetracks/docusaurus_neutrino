@@ -2,10 +2,9 @@
 set -e
 
 APP_NAME=$1
-TOGGLE_OUTLINE=$2
 DIR_APP=$PWD/$APP_NAME
 
-docker run -i -t --rm -v ${PWD}:/home/node/neutrino rubyonracetracks/node_user /home/node/neutrino/build-docu $APP_NAME $TOGGLE_OUTLINE
+docker run -i -t --rm -v ${PWD}:/home/node/neutrino rubyonracetracks/node_user /home/node/neutrino/build-docu $APP_NAME
 
 echo '##########################################'
 echo 'The new app has been created from scratch!'
