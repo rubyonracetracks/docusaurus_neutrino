@@ -14,7 +14,7 @@ This app was created with the aid of Docusaurus Neutrino, which automatically cr
 * `bash clean.sh`: This command removes the "website/build", "website/i18n", and "website/node_modules" directories.  This is handy for searching for a certain string in your source code.
 * `bash git_check.sh`: Before you use the "git add" and "git commit" commands, run the git_check.sh script to make sure that all tests pass.
 * `bash exec.sh *`: Add the command "bash exec.sh" to the beginning of any command in order to execute it within the Docker container (instead of the host OS).
-* `bash exec-root.sh *`: Add the command "bash exec.sh" to the beginning of any command in order to execute it as root within the Docker container (instead of the host OS).
+* `bash root.sh *`: Enter the Docker container as root.
 * `bash test_app.sh`: Use this command to run the full test suite.
 * `bash test_code.sh`: Use this command to run "yarn audit" and "yarn outdated".
 * `bash info.sh`: Use this command to get basic information on the Docker container.

@@ -26,10 +26,10 @@ chmod +x bin/*
 mv mod-02-build.sh build.sh
 mv mod-02-clean.sh clean.sh
 mv mod-02-exec.sh exec.sh
-mv mod-02-exec-root.sh exec-root.sh
 mv mod-02-git_check.sh git_check.sh
 mv mod-02-info.sh info.sh
 mv mod-02-nuke.sh nuke.sh
+mv mod-02-root.sh root.sh
 mv mod-02-server.sh server.sh
 mv mod-02-test_app.sh test_app.sh
 mv mod-02-test_code.sh test_code.sh
