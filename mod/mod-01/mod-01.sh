@@ -7,6 +7,10 @@ echo '#########################'
 
 DIR_MAIN=$PWD
 
+echo '----------------------------------'
+echo 'Removing yarn.lock from .gitignore'
+sed -i -n "/.yarn.lock/{p; :a; N; //!ba; s/.*\n//}; p" .gitignore
+
 echo '------------------------------------'
 echo "cd $DIR_MAIN/website && yarn install"
 cd $DIR_MAIN/website && yarn install
