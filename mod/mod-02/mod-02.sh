@@ -18,7 +18,6 @@ mv mod-02-bin_yexec bin/yexec
 mv mod-02-bin_yinfo bin/yinfo
 mv mod-02-bin_yinstall bin/yinstall
 mv mod-02-bin_yroot bin/yroot
-mv mod-02-bin_yserver bin/yserver
 mv mod-02-bin_youtdated bin/youtdated
 mv mod-02-bin_ytest bin/ytest
 chmod +x bin/*
