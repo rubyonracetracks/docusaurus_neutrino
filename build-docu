@@ -41,6 +41,10 @@ cd $DIR_APP && npx docusaurus-init
 cd $DIR_MAIN
 wait
 
+# WICHTIG/LEGACY/bash: Adding nukec.sh and nuke.sh
+cp $DIR_MAIN/nukec.sh $DIR_APP
+cp $DIR_MAIN/nuke.sh $DIR_APP
+
 # Add the mod directory and mod scripts to .gitignore
 echo '' >> $DIR_APP/.gitignore
 echo '# Files and directories from Docusaurus Neutrino' >> $DIR_APP/.gitignore
