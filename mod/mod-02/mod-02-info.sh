@@ -1,3 +1,3 @@
 #!/bin/bash
 
-bin/yinfo
+bin/dinfo

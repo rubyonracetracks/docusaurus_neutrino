@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bin/yinstall
+bin/dinstall
 
 echo '-----------------'
 echo 'docker-compose up'

@@ -1,4 +1,4 @@
 #!/bin/bash
 
-bin/yinstall
-bin/ybuild
+bin/dinstall
+bin/dbuild
