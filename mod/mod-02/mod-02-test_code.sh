@@ -1,5 +1,5 @@
 #!/bin/bash
 
-bin/yaudit
+bin/daudit
 
-bin/youtdated
+bin/doutdated

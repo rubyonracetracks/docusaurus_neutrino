@@ -12,14 +12,14 @@ mv mod-02-Dockerfile Dockerfile
 mv mod-02-docker-compose.yml docker-compose.yml
 
 mkdir bin
-mv mod-02-bin_yaudit bin/yaudit
-mv mod-02-bin_ybuild bin/ybuild
-mv mod-02-bin_yexec bin/yexec
-mv mod-02-bin_yinfo bin/yinfo
-mv mod-02-bin_yinstall bin/yinstall
-mv mod-02-bin_yroot bin/yroot
-mv mod-02-bin_youtdated bin/youtdated
-mv mod-02-bin_ytest bin/ytest
+mv mod-02-bin_daudit bin/daudit
+mv mod-02-bin_dbuild bin/dbuild
+mv mod-02-bin_dexec bin/dexec
+mv mod-02-bin_dinfo bin/dinfo
+mv mod-02-bin_dinstall bin/dinstall
+mv mod-02-bin_droot bin/droot
+mv mod-02-bin_doutdated bin/doutdated
+mv mod-02-bin_dtest bin/dtest
 chmod +x bin/*
 
 mv mod-02-build.sh build.sh

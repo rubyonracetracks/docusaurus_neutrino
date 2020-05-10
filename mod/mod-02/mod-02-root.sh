@@ -2,4 +2,4 @@
 
 # Enter the Docker container as root.
 
-bin/yroot
+bin/droot
