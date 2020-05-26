@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-DATE=`date +%Y%m%d-%H%M%S-%3N`
+DATE=`date -u +%Y%m%d-%H%M%S-%3N`
 APP_NAME='tmp1'
 
 mkdir -p log

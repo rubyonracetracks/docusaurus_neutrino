@@ -9,7 +9,7 @@ echo 'If you enter a blank, a directory name will be chosen for you.'
 read DIR_NAME
 
 if [ -z "$DIR_NAME" ]; then
-  DATE=`date +%Y%m%d-%H%M%S-%3N`
+  DATE=`date -u +%Y%m%d-%H%M%S-%3N`
   DIR_NAME="docu-$DATE"
 fi
 
