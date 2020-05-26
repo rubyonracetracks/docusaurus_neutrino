@@ -1,9 +1,10 @@
 #!/bin/bash
-DATE=`date +%Y%m%d-%H%M%S-%3N`
-APP_NAME='tmp1'
+set -e
+
+APP_NAME=$1
 DIR_APP=$PWD/new_apps/$APP_NAME
 
-mkdir -p log
-bash exec-main.sh $APP_NAME 'no_outline'
+mkdir -p new_apps
+bash exec-main.sh $APP_NAME
 
 cd $DIR_APP && bash build.sh
